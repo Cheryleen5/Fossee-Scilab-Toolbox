@@ -1,3 +1,5 @@
+funcprot(0)
+function contRange = clustersegment(xhi)
 //This function calculates boundary indexes of clusters of 1’s.
 //Calling Sequence
 //c = clustersegment(s)
@@ -15,8 +17,6 @@
 //    2.    6.  
 
 
-funcprot(0)
-function contRange = clustersegment(xhi)
     bool_discon = diff(xhi, 1, 2);
     [Np, Na] = size(xhi);
     contRange = cell(1, Np);
